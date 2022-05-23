@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckExample", "DesignPattern\DuckExample.csproj", "{5E6158D5-DBCF-4A5A-8581-498B0256282F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DuckExample", "DesignPattern\DuckExample.csproj", "{5E6158D5-DBCF-4A5A-8581-498B0256282F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyReview", "StrategyReview\StrategyReview.csproj", "{BC0F1F82-C400-4F99-81A8-73993628EB69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyReview", "StrategyReview\StrategyReview.csproj", "{BC0F1F82-C400-4F99-81A8-73993628EB69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorLesson", "DecoratorLesson\DecoratorLesson.csproj", "{9A7928BB-1CFB-476F-8C1D-2F77F1141994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorLesson", "DecoratorLesson\DecoratorLesson.csproj", "{9A7928BB-1CFB-476F-8C1D-2F77F1141994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HondaDealerShip", "HondaDealerShip\HondaDealerShip.csproj", "{A2DFA399-C281-47F2-B36E-8EF864298822}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HondaDealerShip", "HondaDealerShip\HondaDealerShip.csproj", "{A2DFA399-C281-47F2-B36E-8EF864298822}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1_BookingTrain", "Lab1_BookingTrain\Lab1_BookingTrain.csproj", "{EC8141BF-4C35-4F1A-A648-8A74EE3FE7D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Honda_Review_Zacharie", "Honda_Review\Honda_Review_Zacharie.csproj", "{4F30CA66-CB0C-41D5-BBB8-34070D45841F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorReview", "DecoratorReview\DecoratorReview.csproj", "{3FECECDD-BF94-469A-BA65-C19AB4A1712A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryExample", "FactoryExample\FactoryExample.csproj", "{410FDFDB-0E35-4558-AAFC-7A8DF5D488E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{A2DFA399-C281-47F2-B36E-8EF864298822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2DFA399-C281-47F2-B36E-8EF864298822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2DFA399-C281-47F2-B36E-8EF864298822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8141BF-4C35-4F1A-A648-8A74EE3FE7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8141BF-4C35-4F1A-A648-8A74EE3FE7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8141BF-4C35-4F1A-A648-8A74EE3FE7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8141BF-4C35-4F1A-A648-8A74EE3FE7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F30CA66-CB0C-41D5-BBB8-34070D45841F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F30CA66-CB0C-41D5-BBB8-34070D45841F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F30CA66-CB0C-41D5-BBB8-34070D45841F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F30CA66-CB0C-41D5-BBB8-34070D45841F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FECECDD-BF94-469A-BA65-C19AB4A1712A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FECECDD-BF94-469A-BA65-C19AB4A1712A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FECECDD-BF94-469A-BA65-C19AB4A1712A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FECECDD-BF94-469A-BA65-C19AB4A1712A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410FDFDB-0E35-4558-AAFC-7A8DF5D488E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410FDFDB-0E35-4558-AAFC-7A8DF5D488E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410FDFDB-0E35-4558-AAFC-7A8DF5D488E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410FDFDB-0E35-4558-AAFC-7A8DF5D488E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

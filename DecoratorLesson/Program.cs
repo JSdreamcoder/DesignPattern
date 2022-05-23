@@ -12,13 +12,67 @@
 //Console.WriteLine(myCoffee.Cost());
 //Console.WriteLine(myCoffee.Description());
 
-Beverage myBeverage = new MilkTee();
-myBeverage = new AddOnMilk(myBeverage);
-myBeverage = new AddOnSpeakingDrink(myBeverage);
+//Beverage myBeverage = new MilkTee();
+//myBeverage = new AddOnMilk(myBeverage);
+//myBeverage = new AddOnSpeakingDrink(myBeverage);
 
-Console.WriteLine(myBeverage.Description());
-Console.WriteLine(myBeverage.Cost());
-Console.WriteLine(myBeverage);
+//Console.WriteLine(myBeverage.Description());
+//Console.WriteLine(myBeverage.Cost());
+//Console.WriteLine(myBeverage);
+var drivethrew = new DriveThrew();
+var drivethrewcoffee = drivethrew.Order("coffee");
+
+
+public class BeverageFactory
+{
+    public Beverage CreateBeverage(string order)
+    {
+        Beverage beverage;
+        
+            if (order == "coffee")
+            {
+                return beverage = new Coffee();
+            }
+            else if (order == "Latte")
+            {
+                return beverage = new Latte();
+            }
+            else if (order == "espresso")
+            {
+                return beverage = new Esprreso();
+            }else
+            {
+                throw new Exception("Wrong Order");
+            }
+        
+       
+    }
+}
+public abstract class BeverageVendor
+{
+    BeverageFactory factory = new BeverageFactory();
+    public Beverage MakeBevarage(string order)
+    {
+        Beverage beverage;
+        beverage = factory.CreateBeverage(order);
+        beverage.Pour();
+        beverage.Lid();
+
+        return beverage;
+    }
+
+    //public abstract Beverage CreateBeverage(string order); // instead of Factory, we can use this and the children have CreateBeverage.
+}
+
+public class DriveThrew : BeverageVendor
+{
+    BeverageFactory factory;
+    public Beverage Order(string order)
+    {
+        return MakeBevarage(order);
+    }
+}
+
 public abstract class Beverage
 {
     protected string _description { get; set; }
@@ -35,6 +89,14 @@ public abstract class Beverage
     }
 
     public virtual int Milliliters { get; set; }
+    public void Pour()
+    {
+        Console.WriteLine("Pour");
+    }
+    public void Lid()
+    {
+        Console.WriteLine("Lid");
+    }
 }
 
 public class Coffee : Beverage
